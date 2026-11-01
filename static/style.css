@@ -1,0 +1,211 @@
+
+/* ShopSmart - Website Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #252525;
+}
+
+/* Header */
+
+.header {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #dbeafe;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Common sections */
+
+.search-section,
+.add-section,
+.products-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+/* Input fields */
+
+input {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+/* Buttons */
+
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#showAllButton {
+    background-color: #475569;
+}
+
+#showAllButton:hover {
+    background-color: #334155;
+}
+
+/* Product form */
+
+#productForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#productForm input {
+    flex: 1 1 180px;
+}
+
+#productForm button {
+    flex: 0 0 auto;
+}
+
+/* Messages */
+
+#message {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #15803d;
+}
+
+/* Product cards */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 20px;
+}
+
+.product-card {
+    background: #f8fafc;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    margin: 8px 0;
+    color: #475569;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb !important;
+}
+
+.delete-button {
+    background-color: #dc2626;
+}
+
+.delete-button:hover {
+    background-color: #b91c1c;
+}
+
+/* Footer */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .search-section,
+    .add-section,
+    .products-section {
+        padding: 16px;
+    }
+
+    #productForm {
+        flex-direction: column;
+    }
+
+    #productForm input,
+    #productForm button {
+        width: 100%;
+    }
+}
+
+

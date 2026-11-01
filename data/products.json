@@ -1,0 +1,38 @@
+[
+    {
+        "product_id": 101,
+        "name": "laptop",
+        "price": 60666.0,
+        "category": "electronics"
+    },
+    {
+        "product_id": 102,
+        "name": "Wireless Mouse",
+        "price": 599.0,
+        "category": "Electronics"
+    },
+    {
+        "product_id": 103,
+        "name": "Headphones",
+        "price": 1599.0,
+        "category": "Electronics"
+    },
+    {
+        "product_id": 104,
+        "name": "Nike Shoes",
+        "price": 3999.0,
+        "category": "fashion"
+    },
+    {
+        "product_id": 105,
+        "name": "Water bottle",
+        "price": 999.0,
+        "category": "Home"
+    },
+    {
+        "product_id": 106,
+        "name": "Jeans",
+        "price": 1499.0,
+        "category": "Clothing"
+    }
+]
