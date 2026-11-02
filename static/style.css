@@ -44,6 +44,8 @@ body {
     width: 45px;
     height: 45px;
     object-fit: contain;
+    display: block;
+    flex-shrink: 0;
 }
 
 .nav-links {
@@ -354,7 +356,7 @@ button:hover {
 
 /* FOOTER */
 
-footer {
+.footer {
     background: #173b70;
     color: white;
     text-align: center;
@@ -362,15 +364,44 @@ footer {
     margin-top: 40px;
 }
 
-footer .brand {
-    color: white;
+.footer-brand {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    width: 45px !important;
+    height: 45px !important;
+    max-width: 45px;
+    max-height: 45px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.footer-brand h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-note {
+    margin-top: 8px;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.85;
 }
 
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 850px) {
+
     #productsContainer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -378,9 +409,11 @@ footer .brand {
     .hero h1 {
         font-size: 36px;
     }
+
 }
 
 @media (max-width: 600px) {
+
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -426,5 +459,6 @@ footer .brand {
     .cart-summary {
         text-align: left;
     }
+
 }
 
