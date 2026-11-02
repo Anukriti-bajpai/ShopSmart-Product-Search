@@ -44,6 +44,10 @@ function getProductImage(productName) {
     if (name.includes("mouse")) {
         return "/static/images/mouse.jpeg";
     }
+    if (name.includes("watch")) {
+        return "/static/images/watch.jpeg";
+    }
+
 
     if (name.includes("laptop")) {
         return "/static/images/laptop.jpg";
