@@ -16,7 +16,6 @@ const message = document.getElementById("message");
 // Get product image based on product name
 // ==========================================
 
-
 function getProductImage(productName) {
 
     const name = productName.toLowerCase();
@@ -37,25 +36,25 @@ function getProductImage(productName) {
         return "/static/images/shoes.jpeg";
     }
 
-    if (name.includes("headphone")) {
+    if (name.includes("headphone") || name.includes("headset")) {
         return "/static/images/headphones.jpeg";
     }
 
     if (name.includes("mouse")) {
         return "/static/images/mouse.jpeg";
     }
+
     if (name.includes("watch")) {
         return "/static/images/watch.jpeg";
     }
-
 
     if (name.includes("laptop")) {
         return "/static/images/laptop.jpg";
     }
 
+    // Default image
     return "/static/images/laptop.jpg";
 }
-
 
 
 // ==========================================
@@ -82,7 +81,6 @@ function displayProducts(products) {
         image.alt = product.name;
         image.className = "product-image";
 
-        // Hide image if file is missing
         image.onerror = function() {
             this.style.display = "none";
         };
@@ -297,3 +295,7 @@ async function deleteProduct(productId) {
 // ==========================================
 
 loadProducts();
+
+
+
+
